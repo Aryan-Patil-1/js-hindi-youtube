@@ -57,4 +57,6 @@ ARRAY METHODs :
 7.Join = converts to string.
 8. Slice(value to remove from,value remove upto but don't include)= returns new array and original value remains unchanged. Use when you need to extract a portion of an array without modifying it.
 9. Splice(value to delete from, number of value to delete) = returns new array with deleted one and original value changed.Use when you need to add, remove, or replace elements within an array.
+
+actually there is a mistake in splice method....splice not includes last index value but it takes number of values given from starting index.....for ex: arr = [2,3,4,5,6,7,8,9] and then console.log(arr.splice(3,4)); gives 5,6,7,8.....however thank u so much hitesh sir for such valuable series...you are my favourite teacher
 */
