@@ -43,3 +43,22 @@ const books = [
     return bk.publish >= 1995 && bk.genre === "History"
 })
   console.log(userBooks);
+
+
+  const facultyObj=[
+    {faculty:"Deshpande mam",subject:"Computer Graphics",Year:1995},
+    {faculty:"Phadke mam",subject:"Processor Architecture",Year:1990},
+    {faculty:"Singh sir",subject:"M-3",Year:2009},
+    {faculty:"Sonawane sir",subject:"DBMS",Year:2005}
+  ];
+
+  let getFacultyObj=facultyObj.filter((fy)=>{
+    return fy.subject==="DBMS";
+  });
+
+   getFacultyObj=facultyObj.filter((fy)=>{
+    return fy.Year>=1995;
+  });
+  console.log(getFacultyObj)
+    
+  
