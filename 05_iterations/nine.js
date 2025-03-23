@@ -32,3 +32,22 @@ const shoppingCart = [
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
 console.log(priceToPay);
+
+const yourCart=[
+    {product:"Minoxidil",
+     price:599
+    },
+    {product:"Multi-Vitamins",
+      price:99
+    },
+    {product:"Protin-Powder",
+     price:999
+    }
+];
+
+
+let payToBuy=yourCart.reduce((acc,item)=>{
+   return acc+item.price;
+},0)
+
+console.log(`you have to pay ${payToBuy}`);
